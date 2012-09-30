@@ -1,7 +1,5 @@
 Build Dependency
 
-[absolut path to HackDay folder]\HackDay\closure\depswriter.py --root
- "[absolut path to HackDay folder]\HackDay" --output_file "[absolut path to HackDay folder]\
-HackDay\EvaluationMatrix\js\deps.js"
+[absolut path to HackDay folder]\HackDay\closure\depswriter.py --root "[absolut path to HackDay folder]\HackDay" --output_file "[absolut path to HackDay folder]\HackDay\EvaluationMatrix\js\deps.js"
 
 [absolut path to HackDay folder]\HackDay\closure\depswriter.py --root "[absolut path to HackDay folder]\HackDay" --output_file "[absolut path to HackDay folder]\HackDay\InteractiveCanvas\js\deps.js"
