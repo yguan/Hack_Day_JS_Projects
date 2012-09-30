@@ -96,6 +96,16 @@
           <em>very very large dot</em> {<em>shape</em>:<em>dot</em>}<br />
           <em>rounded rectangle</em> {<em>shape</em>:<em>box</em>}
           </code>
+		  
+		<h3>dependency analysis</h3>
+        <p>To display all edges that flow into a specific node directly/indirectly, set <code>viewInflow: true</code></p>
+        <code class="block">
+          <em>node</em> {<em>viewInflow</em>:<em>true</em>}
+        </code>
+		<p>To display all edges that flow out of a specific node directly/indirectly, set <code>viewOutflow: true</code></p>
+        <code class="block">
+          <em>node</em> {<em>viewOutflow</em>:<em>true</em>}
+        </code>
       </div>
       
       <div class="edges">
@@ -112,6 +122,7 @@
           <em>src</em> -&gt; <em>dst</em> {<em>color</em>:<em>plum</em>, <em>weight</em>:<em>2</em>}
           </code>
           <p>If no style options are specified, the edge will be drawn in grey with a line weight of 1px.</p>
+		  
         <h3>colors</h3>
          <p>The <code>color</code> property can be set to the same variety of formats demonstrated in
          the Nodes section.</p>
@@ -119,6 +130,15 @@
         <h3>line weights</h3>
         <p>The <code>weight</code> property can be set to a number controlling the width of the line 
            in pixels.</p>
+		   
+		<h3>edge weight</h3>
+        <p>Use <code>edgeWeight</code> to display the weight/label for the edge, if a number is used, chord diagram can use it to generate graph.</p>
+        <code class="block">
+          <em>src</em> -&gt; <em>dst</em> {<em>color</em>:<em>plum</em>, <em>weight</em>:<em>2</em>, <em>edgeWeight</em>:<em>10</em>}
+        </code>
+        <code class="block">
+          <em>src</em> -&gt; <em>dst</em> {<em>color</em>:<em>plum</em>, <em>weight</em>:<em>2</em>, <em>edgeWeight</em>:<em>"use"</em>}
+        </code>
       </div>
       
       <div class="styles">
