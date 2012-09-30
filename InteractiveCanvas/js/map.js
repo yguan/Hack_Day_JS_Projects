@@ -1,5 +1,5 @@
 /*jslint evil: true, undef: true, browser: true, nomen: true */
-/*globals $, jQuery, goog, hackday */
+/*globals $, jQuery, goog, hackday, Tool */
 
 goog.provide('hackday.interactiveCanvas.map');
 
@@ -31,6 +31,10 @@ goog.require('paper');
 			paper.install(window);
 			var canvas = document.getElementById(config.canvasId);
 			paper.setup(canvas);
+
+			new Tool().onMouseDown = function (event) {
+				event.item.selected = true;
+			};
 			return this;
 		};
 
